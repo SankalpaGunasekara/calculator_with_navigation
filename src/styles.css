@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+    border-radius: 10px !important;
+}
+
+h2 {
+    color: rgb(148, 148, 148);
+}
