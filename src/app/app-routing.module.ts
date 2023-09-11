@@ -7,9 +7,9 @@ import { DistrictsComponent } from './districts/districts.component';
 
 const routes: Routes = [
 
-  { path: '', component: HomeComponent },
-  { path: 'calculator', component: CalcComponent },
-  {path: 'districts',component:DistrictsComponent}
+  { path: '', component: HomeComponent, data: { title: 'Home' } },
+  { path: 'calculator', component: CalcComponent, data:{title: 'Calculator'} },
+  {path: 'districts',component:DistrictsComponent, data:{title:'Districts'}}
 
 ];
 
