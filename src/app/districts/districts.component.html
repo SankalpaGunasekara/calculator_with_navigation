@@ -9,6 +9,24 @@
 
 <body>
 
+    <div class="container">
+        <table>
+
+            <thead>
+                <tr>
+                    <th>ID:</th>
+                    <th>Name:</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let districtData of data">
+                    <td>{{districtData.id}}</td>
+                    <td>{{districtData.name}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
 </body>
 
 </html>

@@ -1,0 +1,19 @@
+th {
+    width: 100px
+}
+
+table {
+    margin: 10px auto;
+}
+
+th {
+    border: 2px solid rgb(86, 86, 86);
+}
+
+tr td {
+    border: 2px solid rgb(150, 150, 150);
+}
+
+.container {
+    padding: 10px;
+}

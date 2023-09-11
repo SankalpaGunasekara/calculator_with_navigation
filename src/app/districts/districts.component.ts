@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { districtsData } from './districts-data';
 @Component({
   selector: 'app-districts',
   templateUrl: './districts.component.html',
@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
 })
 export class DistrictsComponent {
 
-  title:string = 'Districts'
+  data = districtsData
+
 }
