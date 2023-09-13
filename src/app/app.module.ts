@@ -8,7 +8,9 @@ import {FormsModule} from '@angular/forms';
 import {ReactiveFormsModule} from '@angular/forms';
 import { NavComponent } from './nav/nav.component';
 import { HomeComponent } from './home/home.component';
-import { DistrictsComponent } from './districts/districts.component'
+import { DistrictsComponent } from './districts/districts.component';
+import { CvCreatorComponent } from './cv-creator/cv-creator.component';
+import { VechicleSpecsComponent } from './vechicle-specs/vechicle-specs.component'
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { DistrictsComponent } from './districts/districts.component'
     CalcComponent,
     NavComponent,
     HomeComponent,
-    DistrictsComponent
+    DistrictsComponent,
+    CvCreatorComponent,
+    VechicleSpecsComponent
   ],
   imports: [
     BrowserModule,

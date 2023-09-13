@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.outer-container {
+    display: flex;
+    justify-content: space-between;
+    /* Align containers to the left and right */
+    align-items: flex-start;
+    /* Align items to the top */
+    max-width: 1600px;
+    margin: 10px 0;
+}
+
+.container {
+    flex: 1;
+    /* Equal width for both containers */
+    border: 2px solid rgb(168, 168, 168);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.model {
+    margin-right: 10px;
+    /* Add margin to create space between containers */
+}
+
+.printable {
+    margin-left: 10px;
+    text-align: left;
+    /* Add margin to create space between containers */
+}
+
+
+/* Style for h5 and input within the .model container */
+
+.model ul {
+    list-style: none;
+    padding: 0;
+}
+
+.model ul li {
+    display: flex;
+    /* Make h5 and input inline */
+    align-items: center;
+    /* Vertically align items */
+    text-align: center;
+    justify-content: end;
+    margin-top: 15px;
+}
+
+.model h5 {
+    margin: 0;
+    /* Remove default margin for h5 */
+    margin-right: 10px;
+    /* Add margin between h5 and input */
+}
+
+.model input {
+    width: 60%;
+    /* Fill the available space */
+    border: 1px solid rgb(231, 231, 231);
+    border-radius: 0px !important;
+}
