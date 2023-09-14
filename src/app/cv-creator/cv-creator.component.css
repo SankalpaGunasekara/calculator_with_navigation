@@ -24,12 +24,22 @@ body {
 .model {
     margin-right: 10px;
     /* Add margin to create space between containers */
+    border: 0px !important
 }
 
 .printable {
     margin-left: 10px;
     text-align: left;
+    border: 0px !important
     /* Add margin to create space between containers */
+}
+
+.printable h3 {
+    text-align: center;
+}
+
+.printable p {
+    margin-bottom: 5px;
 }
 
 
@@ -46,7 +56,7 @@ body {
     align-items: center;
     /* Vertically align items */
     text-align: center;
-    justify-content: end;
+    justify-content: flex-end;
     margin-top: 15px;
 }
 
@@ -62,4 +72,24 @@ body {
     /* Fill the available space */
     border: 1px solid rgb(231, 231, 231);
     border-radius: 0px !important;
+}
+
+.feature-container {
+    /* text-align: center; */
+    /* margin: 100px auto; */
+    /* min-width: 500px; */
+    background-color: #f5f5f5;
+    /* border: 1px solid #ccc; */
+    padding: 20px;
+    border-radius: 5px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+    margin: 10px 0;
+    text-align: left;
+}
+
+
+/* fonts */
+
+.font01 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }

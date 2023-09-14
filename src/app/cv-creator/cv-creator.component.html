@@ -12,69 +12,76 @@
         <div class="container model">
             <ul>
                 <li>
-
                     <h5>Make</h5>
-                    &nbsp;<input [(ngModel)]='make' type="text" (ngModelChange)="capitalize($event,'make')" />
+                    &nbsp;<input [(ngModel)]="make" type="text" autocomplete="off" />
                 </li>
                 <li>
                     <h5>Model</h5>
-                    &nbsp;<input [(ngModel)]='model' type="text" (ngModelChange)="capitalize($event,'model')" />
+                    &nbsp;<input [(ngModel)]="model" type=" text" />
                 </li>
                 <li>
                     <h5>Vehicle Grade</h5>
                     &nbsp;
-                    <input [(ngModel)]='grade' type="text" (ngModelChange)="capitalize($event,'grade')" />
+                    <input [(ngModel)]="grade" type="text" />
                 </li>
                 <li>
                     <h5>Year of manufacture</h5>
-                    &nbsp;<input [(ngModel)]='year' type="text" (ngModelChange)="capitalize($event,'year')" />
+                    &nbsp;<input [(ngModel)]="year" type="text" />
                 </li>
                 <li>
                     <h5>Vehicle Number</h5>
-                    &nbsp;<input [(ngModel)]='capitalizedWord' type="text" />
+                    &nbsp;<input type="text " />
                 </li>
                 <li>
                     <h5>Engine No</h5>
-                    &nbsp;<input [(ngModel)]='capitalizedWord' type="text" />
+                    &nbsp;<input type="text " />
                 </li>
                 <li>
                     <h5>Chassis No</h5>
-                    &nbsp;<input [(ngModel)]='capitalizedWord' type="text" />
+                    &nbsp;<input type="text " />
                 </li>
                 <li>
                     <h5>Engine Capacity</h5>
-                    &nbsp;<input [(ngModel)]='capitalizedWord' type="text" />
+                    &nbsp;<input type="text " />
                 </li>
                 <li>
                     <h5>Transmission</h5>
-                    &nbsp;<input [(ngModel)]='capitalizedWord' type="text" />
+                    &nbsp;<input type="text " />
                 </li>
                 <li>
                     <h5>Fuel Type</h5>
-                    &nbsp;<input [(ngModel)]='capitalizedWord' type="text" />
+                    &nbsp;<input type="text " />
                 </li>
                 <li>
                     <h5>Color</h5>
-                    &nbsp;<input [(ngModel)]='capitalizedWord' type="text" />
+                    &nbsp;<input type="text " />
                 </li>
                 <li>
                     <h5>Seating Capacity</h5>
-                    &nbsp;<input [(ngModel)]='capitalizedWord' type="text" />
+                    &nbsp;<input type="text " />
                 </li>
                 <li>
                     <h5>Description</h5>
-                    &nbsp;<textarea name="" id="" cols="46" rows="10"></textarea>
+                    &nbsp;<textarea name=" " id=" " cols="46 " rows="10 "></textarea>
                 </li>
-
             </ul>
         </div>
+        <div style="width:10%" class="feature-container">
+            <p><input [(ngModel)]="applyFont01" type="checkbox" name="" id=""> Font_01</p>
+            <p><input type="checkbox" name="" id=""> Font_02</p>
+            <p><input type="checkbox" name="" id=""> Font_03</p>
+            <p><input type="checkbox" name="" id=""> Font_04</p>
 
+        </div>
         <div class="container printable">
-            <h3 style="display: block;">Preview</h3>
-            <h3>{{make}} {{model}} - {{year}}</h3>
-            <p>Model - {{model}}</p>
-            <p>Grade - {{grade}}</p>
-            <p>Year of manufacture - {{year}}</p>
+            <h4>Preview</h4>
+            <div *ngIf="" class="container" [ngClass]="{'font01':applyFont01}">
+                <h3>{{ dataCap(make) }} {{ dataCap(model) }} - {{ dataCap(year) }}</h3>
+                <br>
+                <p>Model - {{ dataCap(make) }}</p>
+                <p>Grade - {{ grade }}</p>
+                <p>Year of manufacture - {{ year }}</p>
+            </div>
         </div>
     </div>
 </body>
