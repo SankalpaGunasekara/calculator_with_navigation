@@ -9,4 +9,16 @@ export class DistrictsComponent {
 
   data = districtsData
 
+  editData(){
+
+  }
+
+  deleteData(){
+
+  }
+
+  addData(){
+    
+  }
+
 }
