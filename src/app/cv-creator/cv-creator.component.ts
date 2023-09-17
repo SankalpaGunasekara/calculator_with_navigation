@@ -137,6 +137,7 @@ export class CvCreatorComponent {
     });
   }
 
+  //PDF generation using jsPDF library and html2canvas - referenced
   public openPDF(): void {
     // Get the HTML element by ID
     const element = document.getElementById('toPrint');
