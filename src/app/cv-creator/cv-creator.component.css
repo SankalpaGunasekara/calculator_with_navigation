@@ -22,8 +22,8 @@ body {
 }
 
 .model {
+    width:40%;
     margin-right: 10px;
-    /* Add margin to create space between containers */
     border: 0px !important
 }
 

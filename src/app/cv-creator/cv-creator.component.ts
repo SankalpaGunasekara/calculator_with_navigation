@@ -14,18 +14,18 @@ import html2canvas from 'html2canvas';
 export class CvCreatorComponent {
 
 
-  make: string = 'Toyota'
-  model: string = 'Hilux'
-  grade: string = 'G'
-  year: string = "2018"
-  vehiNum1: string = 'CAH'
-  vehiNum2: string = "1234"
-  engNumber: string = "123123"
+  make: string = ''
+  model: string = ''
+  grade: string = ''
+  year: string = ""
+  vehiNum1: string = ''
+  vehiNum2: string = ""
+  engNumber: string = ""
   description: string = ''
 
   ChassisNo: string = ''
   EngineCapacity: string = ''
-  Transmission: string = 'Auto'
+  Transmission: string = ''
   FuelType: string = ''
   Color: string = ''
   SeatingCap: string = ''
