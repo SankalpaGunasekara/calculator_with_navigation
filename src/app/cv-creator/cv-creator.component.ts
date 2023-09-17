@@ -18,7 +18,8 @@ export class CvCreatorComponent {
   model: string = 'Hilux'
   grade: string = 'G'
   year: string = "2018"
-  vehiNumber: string = '123123'
+  vehiNum1: string = 'CAH'
+  vehiNum2: string = "1234"
   engNumber: string = "123123"
   description: string = ''
 
@@ -40,6 +41,13 @@ export class CvCreatorComponent {
     specialFont1: this.specialFont1
   }
 
+  allCap(data:string){
+
+    const cache = data.toUpperCase()
+    return cache
+
+
+  }
 
 
   fontChecked(fontName: string) {
@@ -115,19 +123,19 @@ export class CvCreatorComponent {
 
   // PDF generation using jsPDF library and html2canvas - referenced - https://www.positronx.io/angular-pdf-tutorial-export-pdf-in-angular-with-jspdf/
 
-  // public openPDF(): void {
-  //   let DATA: any = document.getElementById('toPrint');
-  //   html2canvas(DATA).then((canvas) => {
-  //     let fileWidth = 208;
-  //     let fileHeight = (canvas.height * fileWidth) / canvas.width;
-  //     const FILEURI = canvas.toDataURL('image/png');
-  //     let PDF = new jsPdf.jsPDF('p', 'mm', 'a4');
-  //     let position = 0;
-  //     PDF.addImage(FILEURI,'JPG', 0, position, fileWidth, fileHeight, 'SLOW');
-  //     let Model = this.model.charAt(0).toUpperCase() + this.model.slice(1)
-  //     PDF.save(this.make+Model+this.year);
-  //   });
-  // }
+  public GenPdfAsImg(): void {
+    let DATA: any = document.getElementById('toPrint');
+    html2canvas(DATA).then((canvas) => {
+      let fileWidth = 208;
+      let fileHeight = (canvas.height * fileWidth) / canvas.width;
+      const FILEURI = canvas.toDataURL('image/png');
+      let PDF = new jsPdf.jsPDF('p', 'mm', 'a4');
+      let position = 0;
+      PDF.addImage(FILEURI,'JPG', 0, position, fileWidth, fileHeight, 'SLOW');
+      let Model = this.model.charAt(0).toUpperCase() + this.model.slice(1)
+      PDF.save(this.make+Model+this.year);
+    });
+  }
 
   public openPDF(): void {
     // Get the HTML element by ID

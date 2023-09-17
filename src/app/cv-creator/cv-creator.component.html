@@ -30,7 +30,8 @@
                 </li>
                 <li>
                     <h5>Vehicle Number</h5>
-                    &nbsp;<input [(ngModel)]="vehiNumber" type="text " />
+                    &nbsp;<input [(ngModel)]="vehiNum1" type="text " style="width:18%"/>
+                    - <input [(ngModel)]="vehiNum2" type="text "style="width:40%" />
                 </li>
                 <li>
                     <h5>Engine No</h5>
@@ -62,7 +63,7 @@
                 </li>
                 <li>
                     <h5>Description</h5>
-                    &nbsp;<textarea name=" " id=" " cols="46 " rows="10 "></textarea>
+                    &nbsp;<textarea [(ngModel)] = "description" name=" " id=" " cols="46 " rows="10 "></textarea>
                 </li>
             </ul>
         </div>
@@ -82,7 +83,7 @@
                 <p>Model - {{dataCap(make)}}</p>
                 <p>Grade - {{dataCap(grade)}}</p>
                 <p>Year of manufacture - {{year}}</p>
-                <p>Vehicle Number - {{vehiNumber}}</p>
+                <p>Vehicle Number - {{allCap(vehiNum1)}} - {{vehiNum2}}</p>
                 <p>Engine Number - {{engNumber}}</p>
                 <p>Chassis No - {{ChassisNo}}</p>
                 <p>Engine Capacity - {{EngineCapacity}}cc</p>
@@ -90,9 +91,11 @@
                 <p>Fuel Type - {{dataCap(FuelType)}}</p>
                 <p>Color - {{dataCap(Color)}}</p>
                 <p>Seating Capacity - {{SeatingCap}}</p>
+                <p style = "text-align: justify;">Description - <br>{{dataCap(description)}}</p>
             </div>
             <br>
-            <button class="btn btn-success" (click)="openPDF()"> Generate PDF</button>
+            <button style = "margin-right:10px"class="btn btn-success" (click)="GenPdfAsImg()">Generate PDF</button>
+            <button class="btn btn-success" (click)="openPDF()">Generate PDF in text format</button>
         </div>
     </div>
 </body>
