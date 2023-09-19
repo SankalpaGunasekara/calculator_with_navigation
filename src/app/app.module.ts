@@ -10,7 +10,9 @@ import { NavComponent } from './nav/nav.component';
 import { HomeComponent } from './home/home.component';
 import { DistrictsComponent } from './districts/districts.component';
 import { CvCreatorComponent } from './cv-creator/cv-creator.component';
-import { VechicleSpecsComponent } from './vechicle-specs/vechicle-specs.component'
+import { VechicleSpecsComponent } from './vechicle-specs/vechicle-specs.component';
+import { AddFormComponent } from './add-form/add-form.component';
+import { EditFormComponent } from './edit-form/edit-form.component'
 
 @NgModule({
   declarations: [
@@ -20,7 +22,10 @@ import { VechicleSpecsComponent } from './vechicle-specs/vechicle-specs.componen
     HomeComponent,
     DistrictsComponent,
     CvCreatorComponent,
-    VechicleSpecsComponent
+    VechicleSpecsComponent,
+    AddFormComponent,
+    EditFormComponent,
+    
   ],
   imports: [
     BrowserModule,

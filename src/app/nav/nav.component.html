@@ -1,18 +1,18 @@
 <div class="container">
-    <h2 [innerHTML]="pageTitle"></h2>
+    <h2>{{title}}</h2>
     <div class="nav">
         <ul>
             <li>
-                <a (click)='navClick($event, "Home")' routerLink="/">Home</a>
+                <a routerLink="/">Home</a>
             </li>
             <li>
-                <a (click)='navClick($event, "Calculator")' routerLink="/calculator">Calculator</a>
+                <a routerLink="/calculator">Calculator</a>
             </li>
             <li>
-                <a (click)='navClick($event, "Districts")' routerLink="/districts">Districts</a>
+                <a routerLink="/districts">Districts</a>
             </li>
             <li>
-                <a (click)='navClick($event, "vehicle specification PDF maker")' routerLink="/cv-creator">vehicle specification PDF maker</a>
+                <a routerLink="/vehicle specification PDF maker">vehicle specification PDF maker</a>
             </li>
         </ul>
     </div>

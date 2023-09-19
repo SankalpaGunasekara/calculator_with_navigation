@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 
 @Component({
   selector: 'app-nav',
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit{
 
+  @Input() title:string = ''
   pageTitle:any = ''
   ngOnInit(): void {
 
@@ -14,10 +15,10 @@ export class NavComponent implements OnInit{
       
   }
 
-  navClick(event:Event, pageName: string){
+  // navClick(event:Event, pageName: string){
 
-    event.preventDefault()
-    this.pageTitle = pageName
-  }
+  //   event.preventDefault()
+  //   this.pageTitle = decodeURIComponent(pageName)
+  // }
 
 }

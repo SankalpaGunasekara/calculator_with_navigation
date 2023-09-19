@@ -7,3 +7,13 @@
 h2 {
     color: rgb(148, 148, 148);
 }
+
+.outer-container {
+    display: flex;
+    justify-content: space-between;
+    /* Align containers to the left and right */
+    align-items: flex-start;
+    /* Align items to the top */
+    max-width: 1600px;
+    margin: 10px 0;
+}

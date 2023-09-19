@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <div style="text-align: left; transition: ease 0.5s">
+            <button routerLink="/districts" class="btn btn-warning">< Back</button>
+        </div>
+
+        <div class="outer-container">
+            <div class="container">
+                <h3>Add District</h3>
+                <div class="middle-container">
+                    <h3 *ngIf="dataExists" class="warning">Exists</h3>
+
+                    <form #DistrictForm='ngForm' (ngSubmit)="addData()">
+                        <ul>
+                            <li>
+                                <h5>ID</h5>
+                                &nbsp;
+                                <input [(ngModel)]="ID" type="text" name="ID" />
+                            </li>
+                            <li>
+                                <h5>Name</h5>
+                                &nbsp;
+                                <input [(ngModel)]="name" type="text" name="Name" />
+                            </li>
+
+                            <button style="margin:20px 0px" class="btn btn-success" type="submit">Submit</button>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

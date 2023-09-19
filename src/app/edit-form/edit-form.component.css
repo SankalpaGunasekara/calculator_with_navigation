@@ -1,0 +1,52 @@
+.container {
+    flex: 1;
+    /* Equal width for both containers */
+    /* border: 2px solid rgb(168, 168, 168); */
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: right;
+    margin: auto !important;
+}
+
+ul {
+    width: fit-content;
+}
+
+li {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 10px 0;
+}
+
+.container h5 {
+    display: inline-block;
+    margin: 0
+}
+
+.container h3 {
+    margin: 20px 0px;
+    text-align: center;
+}
+
+input {
+    /* width: 20%; */
+    /* Fill the available space */
+    border: 1px solid rgb(231, 231, 231);
+    border-radius: 0px !important;
+}
+
+.middle-container {
+    width: fit-content;
+    margin: auto;
+    border: 2px solid rgb(213, 213, 213);
+    padding: 10px;
+}
+
+.warning {
+    background-color: red;
+    color: aliceblue;
+}
+
+.invisible {
+    display: none;
+}
