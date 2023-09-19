@@ -15,13 +15,6 @@ export class AddFormComponent {
   data = districtsData
   ID: number = 0
   name: string = ''
-  editData() {
-
-  }
-
-  deleteData() {
-
-  }
 
   addData() {
 
@@ -54,9 +47,9 @@ export class AddFormComponent {
 
   }
 
-  Alert(statement:string){
+  Alert(statement: string) {
 
-    alert("District "+statement)
+    alert("District " + statement)
   }
 
 }
