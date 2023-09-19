@@ -18,7 +18,7 @@
                 <div class="container">
                     <h3>Edit District</h3>
                     <div class="middle-container">
-                        <h3 class="warning">Exists</h3>
+                        <!-- <h3 class="warning">Exists</h3> -->
 
                         <form #DistrictForm='ngForm'>
                             <ul>
@@ -33,7 +33,7 @@
                                     <input [(ngModel)]='editName' type="text" name="Name" />
                                 </li>
 
-                                <button style="margin:20px 0px" class="btn btn-success" (click)="editData()" type="submit">Submit</button>
+                                <button style="margin:20px 0px" class="btn btn-success" (click)="editData()" (click)="Alert('edited')" type="submit">Submit</button>
                             </ul>
                         </form>
                     </div>

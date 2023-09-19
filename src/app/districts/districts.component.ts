@@ -31,6 +31,12 @@ export class DistrictsComponent {
 
   }
 
+  deleteData(){
+    for(let data of districtsData){
+      
+    }
+  }
+
 
 
 }

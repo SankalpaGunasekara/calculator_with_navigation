@@ -44,5 +44,10 @@ export class EditFormComponent implements OnInit {
       }
     }
   }
+
+  Alert(statement:string){
+
+    alert("District "+statement)
+  }
 }
 

@@ -54,4 +54,9 @@ export class AddFormComponent {
 
   }
 
+  Alert(statement:string){
+
+    alert("District "+statement)
+  }
+
 }
