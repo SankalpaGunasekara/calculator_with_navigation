@@ -9,29 +9,38 @@
 
 <body>
 
-    <div class="container">
-        <div style="text-align: right;"><button style="text-align: right!important;" class="btn btn-success" routerLink="/add-item">Add+</button>
+    <div *ngIf="!setStatus">
+        <div class="container">
+            <div style="text-align: right;"><button style="text-align: right!important;" class="btn btn-success" routerLink="/add-item">Add+</button>
+            </div>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>ID:</th>
+                        <th>Name:</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let districtData of data">
+                        <td>{{districtData.id}}</td>
+                        <td>{{districtData.name}}</td>
+                        <td> <button #button style="margin:10px" class="btn btn-success" (click)='setData(districtData.id,districtData.name,true)'>Edit</button>
+                            <Button style="margin:10px 10px 10px 0px" class="btn btn-danger">Delete</Button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
-        <table>
-
-            <thead>
-                <tr>
-                    <th>ID:</th>
-                    <th>Name:</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr *ngFor="let districtData of data">
-                    <td>{{districtData.id}}</td>
-                    <td>{{districtData.name}}</td>
-                    <td> <button #button style="margin:10px" class="btn btn-success" routerLink="/edit-form">Edit</button>
-                        <Button style="margin:10px 10px 10px 0px" class="btn btn-danger">Delete</Button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
     </div>
+    <div *ngIf="setStatus">
+
+        <app-edit-form [editID]="tempID" [editName]="tempName"></app-edit-form>
+
+    </div>
+
 
 </body>
 

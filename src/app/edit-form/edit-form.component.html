@@ -8,37 +8,43 @@
 </head>
 
 <body>
-    <div class="container">
-        <div style="text-align: left; transition: ease 0.5s">
-            <button routerLink="/districts" class="btn btn-warning">< Back</button>
-        </div>
+    <div *ngIf="setStatus">
+        <div class="container">
+            <div style="text-align: left; transition: ease 0.5s">
+                <button class="btn btn-warning" (click)="SetStatus(false)">< Back</button>
+            </div>
 
-        <div class="outer-container">
-            <div class="container">
-                <h3>Edit District</h3>
-                <div class="middle-container">
-                    <h3 class="warning">Exists</h3>
+            <div class="outer-container">
+                <div class="container">
+                    <h3>Edit District</h3>
+                    <div class="middle-container">
+                        <h3 class="warning">Exists</h3>
 
-                    <form #DistrictForm='ngForm'>
-                        <ul>
-                            <li>
-                                <h5>ID</h5>
-                                &nbsp;
-                                <input type="text" name="ID" />
-                            </li>
-                            <li>
-                                <h5>Name</h5>
-                                &nbsp;
-                                <input type="text" name="Name" />
-                            </li>
+                        <form #DistrictForm='ngForm'>
+                            <ul>
+                                <li>
+                                    <h5>ID</h5>
+                                    &nbsp;
+                                    <input [(ngModel)]='editID' type="text" name="ID" />
+                                </li>
+                                <li>
+                                    <h5>Name</h5>
+                                    &nbsp;
+                                    <input [(ngModel)]='editName' type="text" name="Name" />
+                                </li>
 
-                            <button style="margin:20px 0px" class="btn btn-success" type="submit">Submit</button>
-                        </ul>
-                    </form>
+                                <button style="margin:20px 0px" class="btn btn-success" (click)="editData()" type="submit">Submit</button>
+                            </ul>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <div *ngIf="!setStatus">
+        <app-districts></app-districts>
+    </div>
+
 </body>
 
 </html>
