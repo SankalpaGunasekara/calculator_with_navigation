@@ -7,6 +7,7 @@ import { DistrictsComponent } from './districts/districts.component';
 import { CvCreatorComponent } from './cv-creator/cv-creator.component';
 import { AddFormComponent } from './add-form/add-form.component';
 import { EditFormComponent } from './edit-form/edit-form.component';
+import { SandboxComponent } from './sandbox/sandbox.component';
 
 const routes: Routes = [
 
@@ -15,8 +16,8 @@ const routes: Routes = [
   { path: 'districts', component: DistrictsComponent, data: { title: 'Districts' } },
   { path: 'vehicle specification PDF maker', component: CvCreatorComponent },
   { path: 'add-item', component: AddFormComponent },
-  { path: 'edit-form', component: EditFormComponent }
-
+  { path: 'edit-form', component: EditFormComponent },
+  {path: 'sandbox', component:SandboxComponent}
 ];
 
 @NgModule({

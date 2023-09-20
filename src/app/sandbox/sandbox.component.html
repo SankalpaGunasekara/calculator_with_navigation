@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Districts</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div style="text-align: right;"><button style="text-align: right!important;" class="btn btn-success" routerLink="/add-item">Add+</button>
+        </div>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>ID:</th>
+                    <th>Name:</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let districtData of ">
+                    <td>{{districtData}}</td>
+                    <!-- <td>{{districtData}}</td> -->
+                    <td> <button #button style="margin:10px" class="btn btn-success">Edit</button>
+                        <Button style="margin:10px 10px 10px 0px" class="btn btn-danger">Delete</Button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+</body>
+
+</html>

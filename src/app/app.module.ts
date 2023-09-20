@@ -12,7 +12,8 @@ import { DistrictsComponent } from './districts/districts.component';
 import { CvCreatorComponent } from './cv-creator/cv-creator.component';
 import { VechicleSpecsComponent } from './vechicle-specs/vechicle-specs.component';
 import { AddFormComponent } from './add-form/add-form.component';
-import { EditFormComponent } from './edit-form/edit-form.component'
+import { EditFormComponent } from './edit-form/edit-form.component';
+import { SandboxComponent } from './sandbox/sandbox.component'
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { EditFormComponent } from './edit-form/edit-form.component'
     VechicleSpecsComponent,
     AddFormComponent,
     EditFormComponent,
+    SandboxComponent,
     
   ],
   imports: [
