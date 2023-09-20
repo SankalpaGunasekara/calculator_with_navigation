@@ -9,6 +9,13 @@ import { districtsData } from '../districts/districts-data';
 })
 export class SandboxComponent implements OnInit {
 
+  
+
+  private Data = this.service.serviceData
+
+  private pwd:string = 'test'
+  status = false
+  tempPwd = ''
 
 
   constructor(private service: DistrictsServiceService) { }
@@ -16,10 +23,30 @@ export class SandboxComponent implements OnInit {
 
     console.log(this.service.getSudoName())
 
-
   }
 
+  pwdChecker(){
+    if(this.tempPwd == this.pwd){
+
+      this.status = true
+    }
+  }
+
+  public getData(pwd:string):any{
+
+    if(pwd == this.pwd){
+      return this.Data
+    }
+    else{
+      return "Error"
+    }
+    
+
+  }
+ 
+
   sudoName: string = ''
+
 
 
 

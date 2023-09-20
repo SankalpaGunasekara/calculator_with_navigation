@@ -14,8 +14,13 @@
         <div style="text-align: right;"><button style="text-align: right!important;" class="btn btn-success" routerLink="/add-item">Add+</button>
         </div>
 
+        <div *ngIf="!status">
+            <h5>password</h5><input [(ngModel)] = "tempPwd" type="password" name="" id="">
+            <br>
+            <button type="submit" class = "btn btn-success" style = "margin:10px" (click)="pwdChecker()">Submit</button>
+        </div>
         <table>
-
+            <div *ngIf="status">
             <thead>
                 <tr>
                     <th>ID:</th>
@@ -23,15 +28,14 @@
                 </tr>
             </thead>
             <tbody>
-                <tr *ngFor="let districtData of ">
-                    <td>{{districtData}}</td>
-                    <!-- <td>{{districtData}}</td> -->
-                    <td> <button #button style="margin:10px" class="btn btn-success">Edit</button>
-                        <Button style="margin:10px 10px 10px 0px" class="btn btn-danger">Delete</Button>
-                    </td>
+                <tr *ngFor="let districtData of getData(tempPwd)">
+                    <td>{{districtData.id}}</td>
+                    <td>{{districtData.name}}</td>
                 </tr>
             </tbody>
+        </div>
         </table>
+        
     </div>
 
 

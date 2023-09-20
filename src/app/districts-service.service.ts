@@ -7,24 +7,12 @@ export class DistrictsServiceService {
 
   constructor() { }
 
-  data = districtsData
+  serviceData = districtsData
 
   private sudoName: string = 'Service is working'
 
   getSudoName() {
     return this.sudoName
-  }
-
-  getDistrictData(): any {
-
-    const tempData = []
-
-    for (let district of districtsData) {
-
-      tempData.push({ id: district.id, name: district.name })
-    }
-
-    return tempData;
   }
 
 }

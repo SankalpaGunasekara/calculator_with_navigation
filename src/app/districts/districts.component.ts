@@ -19,7 +19,6 @@ export class DistrictsComponent {
     return this.tempID, this.tempName
   }
 
-
   setData(id: any, name: string, status: boolean) {
 
     console.log(id, name)
