@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { count } from 'rxjs';
+import { DistrictsServiceService } from 'src/app/Services/districts-service.service';
 
 import * as jsPdf from 'jspdf'
 import html2canvas from 'html2canvas';
@@ -11,7 +12,12 @@ import html2canvas from 'html2canvas';
   templateUrl: './cv-creator.component.html',
   styleUrls: ['./cv-creator.component.css']
 })
-export class CvCreatorComponent {
+export class CvCreatorComponent implements OnInit{
+  constructor(private service: DistrictsServiceService){}
+  ngOnInit(): void {
+    
+    this.service.scrollToElement('target')
+  }
 
 
   make: string = ''

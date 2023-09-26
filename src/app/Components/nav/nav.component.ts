@@ -1,4 +1,5 @@
 import { Component, OnInit,Input } from '@angular/core';
+import { DistrictsServiceService } from 'src/app/Services/districts-service.service';
 
 @Component({
   selector: 'app-nav',
@@ -6,6 +7,8 @@ import { Component, OnInit,Input } from '@angular/core';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent implements OnInit{
+
+  constructor(private service: DistrictsServiceService) { }
 
   @Input() title:string = ''
   pageTitle:any = ''
@@ -21,4 +24,5 @@ export class NavComponent implements OnInit{
   //   this.pageTitle = decodeURIComponent(pageName)
   // }
 
+  
 }

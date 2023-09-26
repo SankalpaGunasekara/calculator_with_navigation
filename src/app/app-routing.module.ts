@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { HomeComponent } from './home/home.component';
-import { CalcComponent } from './calc/calc.component';
-import { DistrictsComponent } from './districts/districts.component';
-import { CvCreatorComponent } from './cv-creator/cv-creator.component';
-import { AddFormComponent } from './add-form/add-form.component';
-import { EditFormComponent } from './edit-form/edit-form.component';
-import { SandboxComponent } from './sandbox/sandbox.component';
+import { HomeComponent } from './Components/home/home.component';
+import { CalcComponent } from './Components/calc/calc.component';
+import { DistrictsComponent } from './Components/districts/districts.component';
+import { CvCreatorComponent } from './Components/cv-creator/cv-creator.component';
+import { AddFormComponent } from './Components/add-form/add-form.component';
+import { EditFormComponent } from './Components/edit-form/edit-form.component';
+import { SandboxComponent } from './Components/sandbox/sandbox.component';
 
 const routes: Routes = [
 

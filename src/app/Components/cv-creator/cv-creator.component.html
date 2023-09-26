@@ -30,8 +30,7 @@
                 </li>
                 <li>
                     <h5>Vehicle Number</h5>
-                    &nbsp;<input [(ngModel)]="vehiNum1" type="text " style="width:18%"/>
-                    - <input [(ngModel)]="vehiNum2" type="text "style="width:40%" />
+                    &nbsp;<input [(ngModel)]="vehiNum1" type="text " style="width:18%" /> - <input [(ngModel)]="vehiNum2" type="text " style="width:40%" />
                 </li>
                 <li>
                     <h5>Engine No</h5>
@@ -63,7 +62,7 @@
                 </li>
                 <li>
                     <h5>Description</h5>
-                    &nbsp;<textarea [(ngModel)] = "description" name=" " id=" " cols="46 " rows="10 "></textarea>
+                    &nbsp;<textarea [(ngModel)]="description" name=" " id=" " cols="46 " rows="10 "></textarea>
                 </li>
             </ul>
         </div>
@@ -91,12 +90,16 @@
                 <p>Fuel Type - {{dataCap(FuelType)}}</p>
                 <p>Color - {{dataCap(Color)}}</p>
                 <p>Seating Capacity - {{SeatingCap}}</p>
-                <p style = "text-align: justify;">Description - <br>{{dataCap(description)}}</p>
+                <p style="text-align: justify;">Description - <br>{{dataCap(description)}}</p>
             </div>
             <br>
-            <button style = "margin-right:10px"class="btn btn-success" (click)="GenPdfAsImg()">Generate PDF</button>
+            <button style="margin-right:10px" class="btn btn-success" (click)="GenPdfAsImg()">Generate PDF</button>
             <button class="btn btn-success" (click)="openPDF()">Generate PDF in text format</button>
         </div>
+    </div>
+    <div class="scrollTest">
+        <div style="height:200px"></div>
+        <p id="target">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo neque illo delectus veritatis officia dolor incidunt sit cupiditate molestias. Numquam nisi facere vitae ullam temporibus assumenda amet neque obcaecati repellendus.</p>
     </div>
 </body>
 
